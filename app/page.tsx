@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       {/* Barra de Navegação 🚢 */}
       <div>
-        <div className="max-w-450 mx-auto flex justify-between items-center p-3">
+        <div className="flex justify-center space-x-4 max-w-450 mx-auto items-center p-3">
           {/* LOGO da marca 1/3*/}
           <div>
             <img src={"/LOGO.png"} width={230} height={100} />
@@ -27,13 +27,13 @@ export default function Home() {
           </div>
 
           {/* USER MENU 3/3 */}
-          <div className="flex gap-4">
-            <div className="flex gap-4">
+          <div className="flex space-x-4">
+            <div className="flex space-x-4">
               <img src="/icons/Ellipse.png" width={40} height={"auto"} />
               <div className="pt-2">Olá, Erick</div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex space-x-4">
               <img src={"/icons/favorite.svg"} width={30} height={10} />
 
               <img src={"/icons/shooping cart.svg"} width={30} height={10} />
@@ -43,38 +43,105 @@ export default function Home() {
 
         {/* Botões de ação */}
         <div className="flex justify-center items-center">
-          <div className="p-3 text-lg">
+          <div className="flex space-x-1 p-1 text-lg">
             <Link
               href="/"
               className="px-8 py-1.5 bg-[#E82A25] rounded-sm font-semibold"
             >
               Conexões
             </Link>
-            <Link href="/" className="px-8 py-1 mx-2 border-2 rounded-sm">
+            <Link
+              href="/"
+              className="
+              hover:bg-white 
+              hover:text-black
+                duration-300
+                ease-in-out
+              transition py-1 px-5 border-2 rounded-sm"
+            >
               Mangueiras
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3 
+              hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm "
+            >
               Radiadores
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3 
+              hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Proteção Térmicas
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3 
+              hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Escapamentos
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3  hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Injeção
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3  hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Filtros
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3  hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Acessórios
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3  hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Elétrica
             </Link>
-            <Link href="/" className="p-3">
+            <Link
+              href="/"
+              className="p-3  hover:bg-white/20
+              duration-100
+              ease-in-out
+              transition
+              px-3 py-2 rounded-sm"
+            >
               Bancos e Cintos
             </Link>
           </div>
@@ -82,6 +149,13 @@ export default function Home() {
 
         {/* Faixa vermelha */}
         <div className="bg-[#E82A25] w-full h-2 my-2"></div>
+      </div>
+
+      {/* Banners */}
+      <div className="flex justify-center overflow-hidden">
+        <div className="flex w-430 h-90 bg-amber-400 relative ">
+          <div className="flex w-430 h-90 bg-blue-400 absolute left-432"></div>
+        </div>
       </div>
     </div>
   );
