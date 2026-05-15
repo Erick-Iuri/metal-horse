@@ -208,24 +208,20 @@ export default function Home() {
       </div>
 
       {/* Banners 01*/}
-      <div
-        className=" 
-        w-full
-        max-w-360
-        mx-auto h-120 bg-red-500"
-      >
-        <Image
-          src="/banners/banner.jpg"
-          alt="banner"
-          width={1300}
-          height={400}
-          className="
-          w-full
-          h-full
-          object-cover"
-        />
-        {/* flutuante */}
+      <div className="flex justify-center">
+        <div className="
+        max-w-360 
+        w-360 
+        h-100">
+           <Image 
+           alt="banner01" 
+           width={1280} 
+           height={720} 
+           src="/banners/banner.jpg"
+           className="rounded-sm w-full h-auto object-cover" />
+        </div>
       </div>
+
     </div>
   );
 }
