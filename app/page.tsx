@@ -5,7 +5,7 @@ export default function Home() {
   return (
     /* main div */
     <div>
-      {/* Barra de Navegação 🚢 */}
+      {/* Barra de Navegação 01 🚢 */}
       <div>
         <div
           className="
@@ -207,7 +207,7 @@ export default function Home() {
         ></div>
       </div>
 
-      {/* Banners */}
+      {/* Banners 01*/}
       <div
         className=" 
         w-full
