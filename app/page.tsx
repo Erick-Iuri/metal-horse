@@ -6,7 +6,7 @@ export default function Home() {
     /* main div */
     <div>
       {/* Barra de Navegação 01 🚢 */}
-      <div>
+      <div className="bg-black text-white">
         <div
           className="
         flex 
@@ -220,6 +220,33 @@ export default function Home() {
            src="/banners/banner.jpg"
            className="rounded-sm w-full h-auto object-cover" />
         </div>
+      </div>
+
+      {/* Produtos em recomendação */}
+      <div className="
+      mt-20
+      text-black
+      w-full
+      ">
+        <div className="
+        flex
+        items-start
+        gap-2
+        max-w-360 
+        mx-auto
+        ">
+          <Image 
+          src="/icons/Start.svg" 
+          alt="Icone" 
+          width={6} 
+          height={6} 
+          className="w-6 h-6"/>
+        <p
+        className="text-xl
+        font-bold
+        ">Destaques Metal Horse</p>
+        </div>
+        
       </div>
 
     </div>
