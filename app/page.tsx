@@ -228,6 +228,8 @@ export default function Home() {
       text-black
       w-full
       ">
+
+        {/* comentario */}
         <div className="
         flex
         items-start
