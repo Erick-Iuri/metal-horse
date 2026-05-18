@@ -347,41 +347,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Bancos */}
-          <div
-            className="
-          flex
-          flex-col
-          items-center
-          gap-2
-          w-30 h-30
-
-          hover:scale-105
-          transition
-          duration-300
-          "
-          >
-            <Image
-              alt="Bancos"
-              src="/destaques/Bancos.png"
-              width={300}
-              height={300}
-              className="
-            w-40 h-40
-            rounded-full
-            "
-            />
-            <a
-              href="* "
-              className="
-            text-xl
-            font-bold
-            "
-            >
-              Bancos
-            </a>
-          </div>
-
           {/* Cintos */}
           <div
             className="
@@ -690,89 +655,640 @@ export default function Home() {
         </div>
 
         {/* Produtos linha 01 */}
-        <div className="
+        <div
+          className="
         flex items-center
         gap-2 
         max-w-360 
         mx-auto mt-10
         "
         >
+          {/* Produto lista */}
           <div
-          className="flex flex-col
+            className="flex flex-col
           justify-center
           items-center
           bg-white
-          w-80 h-120
+          text-[#1E1E1E]
+          w-70 h-100
           rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
           "
           >
             {/* Icones de promoção */}
-            <div>
-              <div></div>
-              <div></div>
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
             </div>
             {/* Imagem do produto */}
-            <Image 
-            alt="Produto" 
-            width={300} 
-            height={300} 
-            src="/produtos/Produto 01.png"
-            className="
-            p-1
-            "
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/Produto 01.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
             />
             {/* Titulo do produto */}
-            <text
+            <p
             className="
             px-5
             w-full
             text-left
-            text-lg
+            text-md
             font-bold
             "
-            >Red Line 40WT Race Oil 946ml</text>
+            >
+              Red Line 40WT Race Oil 946ml
+            </p>
 
             {/* Preço antigo */}
-            <text
-            className="
+            <p
+              className="
             px-5
             w-full
             text-left
-            text-lg
+            text-md
             font-light
             line-through
             "
-            >R$ 449,90</text>
+            >
+              R$ 449,90
+            </p>
 
             {/* Preço atual */}
-            <text
-            className="
+            <p
+              className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >R$ 359,91</text>
+            >
+              R$ 359,91
+            </p>
 
             {/* Linha de gatilho */}
-            <text
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+            >
+              No PIX ou 10x no Crêdito
+            </p>
+          </div>
+
+          {/* Produto 02 */}
+          <div
+            className="flex flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+          >
+            {/* Icones de promoção */}
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
+            </div>
+            {/* Imagem do produto */}
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/Camisetas.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+            />
+            {/* Titulo do produto */}
+            <p
             className="
             px-5
             w-full
             text-left
+            text-md
+            font-bold
+            "
+            >
+              Red Line 40WT Race Oil 946ml
+            </p>
+
+            {/* Preço antigo */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+            >
+              R$ 449,90
+            </p>
+
+            {/* Preço atual */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
             text-xl
+            font-bold
+            "
+            >
+              R$ 359,91
+            </p>
+
+            {/* Linha de gatilho */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
             font-light
             "
-            >No PIX ou 10x no Crêdito</text>
+            >
+              No PIX ou 10x no Crêdito
+            </p>
+          </div>
+
+          {/* Produto 03 */}
+          <div
+            className="flex flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+          >
+            {/* Icones de promoção */}
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
+            </div>
+            {/* Imagem do produto */}
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/oleo azul.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+            />
+            {/* Titulo do produto */}
+            <p
+            className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+            >
+              RED LINE LIQUID ASSEMBLY
+            </p>
+
+            {/* Preço antigo */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+            >
+              R$ 449,90
+            </p>
+
+            {/* Preço atual */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+            >
+              R$ 359,91
+            </p>
+
+            {/* Linha de gatilho */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+            >
+              No PIX ou 10x no Crêdito
+            </p>
+          </div>
+
+          {/* Produto 04 */}
+          <div
+            className="flex flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+          >
+            {/* Icones de promoção */}
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
+            </div>
+            {/* Imagem do produto */}
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/Liquid red line.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+            />
+            {/* Titulo do produto */}
+            <p
+            className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+            >
+              Camiseta Red Line Oil USA
+            </p>
+
+            {/* Preço antigo */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+            >
+              R$ 449,90
+            </p>
+
+            {/* Preço atual */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+            >
+              R$ 359,91
+            </p>
+
+            {/* Linha de gatilho */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+            >
+              No PIX ou 10x no Crêdito
+            </p>
+          </div>
+
+          {/* Produto 05 */}
+          <div
+            className="flex flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+          >
+            {/* Icones de promoção */}
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
+            </div>
+            {/* Imagem do produto */}
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/Produto 01.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+            />
+            {/* Titulo do produto */}
+            <p
+            className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+            >
+              Red Line 40WT Race Oil 946ml
+            </p>
+
+            {/* Preço antigo */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+            >
+              R$ 449,90
+            </p>
+
+            {/* Preço atual */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+            >
+              R$ 359,91
+            </p>
+
+            {/* Linha de gatilho */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+            >
+              No PIX ou 10x no Crêdito
+            </p>
           </div>
 
         </div>
 
-        {/* place holder */}
+        {/* Garrett - Advancing Motion */}
         <div
           className="
-        mt-20
+        mt-10
         flex items-center
         gap-2
         max-w-360 
@@ -791,9 +1307,144 @@ export default function Home() {
         font-bold
         "
           >
-            Red Line Oil
+            Garrett - Advancing Motion
           </p>
         </div>
+
+        {/* Produtos linha 01 */}
+        <div
+          className="
+        flex items-center
+        gap-2 
+        max-w-360 
+        mx-auto mt-10
+        pb-20
+        "
+        >
+          <div
+            className="flex flex-col
+          cursor-pointer
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+          >
+            {/* Icones de promoção */}
+            <div
+              className="
+            flex
+            justify-between
+            gap-40
+            "
+            >
+              <div>
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/Red Fire.svg"
+                  className="w-6 h-auto"
+                />
+              </div>
+
+              <div
+                className="
+              flex 
+              justify-center
+              gap-2 "
+              >
+                <Image
+                  alt="icone promoção"
+                  height={7}
+                  width={7}
+                  src="/icons/add carrinho cinza.png"
+                  className="w-6 h-6"
+                />
+                <Image
+                  alt="icone promoção"
+                  height={6}
+                  width={6}
+                  src="/icons/favoritos cinza.png"
+                  className="w-6 h-6"
+                />
+              </div>
+            </div>
+            {/* Imagem do produto */}
+            <Image
+              alt="Produto"
+              width={300}
+              height={300}
+              src="/produtos/Produto 01.png"
+              className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+            />
+            {/* Titulo do produto */}
+            <p
+            className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+            >
+              Red Line 40WT Race Oil 946ml
+            </p>
+
+            {/* Preço antigo */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+            >
+              R$ 449,90
+            </p>
+
+            {/* Preço atual */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+            >
+              R$ 359,91
+            </p>
+
+            {/* Linha de gatilho */}
+            <p
+              className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+            >
+              No PIX ou 10x no Crêdito
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   );
