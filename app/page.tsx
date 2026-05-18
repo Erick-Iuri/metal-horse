@@ -46,7 +46,13 @@ export default function Home() {
           flex 
           space-x-3"
           >
-            <div className="flex w-30">
+            <div
+              className="flex
+            flex-row
+            justify-center
+            gap-3 
+            w-50 h-10"
+            >
               <Image
                 src="/icons/Ellipse.png"
                 alt="perfil"
@@ -234,11 +240,11 @@ export default function Home() {
       w-full
       "
       >
-        {/* Linha de recomendação */}
+        {/* Destaques Metal Horse */}
         <div
           className="
         flex
-        items-start
+        items-center
         gap-2
         max-w-360 
         mx-auto
@@ -252,8 +258,9 @@ export default function Home() {
             className="w-6 h-6"
           />
           <p
-            className="text-xl
-        font-bold
+            className="
+          text-xl
+          font-bold
         "
           >
             Destaques Metal Horse
@@ -263,7 +270,7 @@ export default function Home() {
         {/* Recomendações Produtos + Texto */}
         <div
           className="
-        mt-6
+        my-6
         flex
         justify-center
         gap-4
@@ -585,7 +592,7 @@ export default function Home() {
             </a>
           </div>
 
-           {/* Turbinas */}
+          {/* Turbinas */}
           <div
             className="
           flex
@@ -654,8 +661,138 @@ export default function Home() {
               Downpipes
             </a>
           </div>
+        </div>
 
+        {/* Red Line Oil */}
+        <div
+          className="
+        mt-20
+        flex items-center
+        gap-2
+        max-w-360 
+        mx-auto
+        "
+        >
+          <Image
+            src="/icons/Red Fire.svg"
+            alt="Icone"
+            width={6}
+            height={6}
+            className="w-6 h-6"
+          />
+          <p
+            className="text-xl
+        font-bold
+        "
+          >
+            Red Line Oil
+          </p>
+        </div>
 
+        {/* Produtos linha 01 */}
+        <div className="
+        flex items-center
+        gap-2 
+        max-w-360 
+        mx-auto mt-10
+        "
+        >
+          <div
+          className="flex flex-col
+          justify-center
+          items-center
+          bg-white
+          w-80 h-120
+          rounded-lg
+          "
+          >
+            {/* Icones de promoção */}
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+            {/* Imagem do produto */}
+            <Image 
+            alt="Produto" 
+            width={300} 
+            height={300} 
+            src="/produtos/Produto 01.png"
+            className="
+            p-1
+            "
+            />
+            {/* Titulo do produto */}
+            <text
+            className="
+            px-5
+            w-full
+            text-left
+            text-lg
+            font-bold
+            "
+            >Red Line 40WT Race Oil 946ml</text>
+
+            {/* Preço antigo */}
+            <text
+            className="
+            px-5
+            w-full
+            text-left
+            text-lg
+            font-light
+            line-through
+            "
+            >R$ 449,90</text>
+
+            {/* Preço atual */}
+            <text
+            className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+            >R$ 359,91</text>
+
+            {/* Linha de gatilho */}
+            <text
+            className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-light
+            "
+            >No PIX ou 10x no Crêdito</text>
+          </div>
+
+        </div>
+
+        {/* place holder */}
+        <div
+          className="
+        mt-20
+        flex items-center
+        gap-2
+        max-w-360 
+        mx-auto
+        "
+        >
+          <Image
+            src="/icons/Red Fire.svg"
+            alt="Icone"
+            width={6}
+            height={6}
+            className="w-6 h-6"
+          />
+          <p
+            className="text-xl
+        font-bold
+        "
+          >
+            Red Line Oil
+          </p>
         </div>
       </div>
     </div>
