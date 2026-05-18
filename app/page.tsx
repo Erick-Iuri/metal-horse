@@ -47,15 +47,16 @@ export default function Home() {
           space-x-3"
           >
             <div className="flex w-30">
-              <Image 
-              src="/icons/Ellipse.png"
-              alt="perfil"
-              width={30}
-              height={30}
-              className="
+              <Image
+                src="/icons/Ellipse.png"
+                alt="perfil"
+                width={30}
+                height={30}
+                className="
               w-auto
               h-auto
-              object-cover" />
+              object-cover"
+              />
               <a className="w-20 pt-2">Olá, Erick</a>
             </div>
 
@@ -209,48 +210,454 @@ export default function Home() {
 
       {/* Banners 01*/}
       <div className="flex justify-center">
-        <div className="
+        <div
+          className="
         max-w-360 
         w-360 
-        h-100">
-           <Image 
-           alt="banner01" 
-           width={1280} 
-           height={720} 
-           src="/banners/banner.jpg"
-           className="rounded-sm w-full h-auto object-cover" />
+        h-100"
+        >
+          <Image
+            alt="banner01"
+            width={1280}
+            height={720}
+            src="/banners/banner.jpg"
+            className="rounded-sm w-full h-auto object-cover"
+          />
         </div>
       </div>
 
       {/* Produtos em recomendação */}
-      <div className="
+      <div
+        className="
       mt-20
       text-black
       w-full
-      ">
-
-        {/* comentario domingou */}
-        <div className="
+      "
+      >
+        {/* Linha de recomendação */}
+        <div
+          className="
         flex
         items-start
         gap-2
         max-w-360 
         mx-auto
-        ">
-          <Image 
-          src="/icons/Start.svg" 
-          alt="Icone" 
-          width={6} 
-          height={6} 
-          className="w-6 h-6"/>
-        <p
-        className="text-xl
+        "
+        >
+          <Image
+            src="/icons/Start.svg"
+            alt="Icone"
+            width={6}
+            height={6}
+            className="w-6 h-6"
+          />
+          <p
+            className="text-xl
         font-bold
-        ">Destaques Metal Horse</p>
+        "
+          >
+            Destaques Metal Horse
+          </p>
         </div>
-        
-      </div>
 
+        {/* Recomendações Produtos + Texto */}
+        <div
+          className="
+        mt-6
+        flex
+        justify-center
+        gap-4
+        max-w-360 
+        mx-auto"
+        >
+          {/* Cards de recomendação */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Conexões"
+              src="/destaques/Conexões.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Conexões
+            </a>
+          </div>
+
+          {/* Downpipes */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Downpipes"
+              src="/destaques/Downpipes.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Downpipes
+            </a>
+          </div>
+
+          {/* Bancos */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Bancos"
+              src="/destaques/Bancos.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Bancos
+            </a>
+          </div>
+
+          {/* Cintos */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Cintos"
+              src="/destaques/Cintos.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Cintos
+            </a>
+          </div>
+
+          {/* Inter Coolers */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="InterCoolers"
+              src="/destaques/Inter Cooler.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Coolers
+            </a>
+          </div>
+
+          {/* Bancos 000000*/}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Bancos"
+              src="/destaques/Bancos.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Bancos
+            </a>
+          </div>
+
+          {/* Metanol */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Metanol"
+              src="/destaques/Metanol.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Metanol
+            </a>
+          </div>
+
+          {/* Red Line Oil */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Red Line Oil"
+              src="/destaques/Red Line Oil.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Red Line Oil
+            </a>
+          </div>
+
+          {/* Roupas */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Roupas"
+              src="/destaques/Roupas.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Roupas
+            </a>
+          </div>
+
+           {/* Turbinas */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Turbinas"
+              src="/destaques/Turbinas.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Turbinas
+            </a>
+          </div>
+
+          {/* Downpipes */}
+          <div
+            className="
+          flex
+          flex-col
+          items-center
+          gap-2
+          w-30 h-30
+
+          hover:scale-105
+          transition
+          duration-300
+          "
+          >
+            <Image
+              alt="Downpipes"
+              src="/destaques/Downpipes.png"
+              width={300}
+              height={300}
+              className="
+            w-40 h-40
+            rounded-full
+            "
+            />
+            <a
+              href="* "
+              className="
+            text-xl
+            font-bold
+            "
+            >
+              Downpipes
+            </a>
+          </div>
+
+
+        </div>
+      </div>
     </div>
   );
 }
