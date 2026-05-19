@@ -18,9 +18,11 @@ export default function Home() {
         p-3"
         >
           {/* LOGO da marca 1/3*/}
-          <div>
-            <Image alt="logo" src={"/LOGO.png"} width={230} height={100} />
-          </div>
+          <Link href="/">
+            <div>
+              <Image alt="logo" src={"/LOGO.png"} width={230} height={100} />
+            </div>
+          </Link>
 
           {/* BARRA DE PESQUISA 2/3*/}
           <div className="flex w-310">
@@ -93,7 +95,7 @@ export default function Home() {
           text-lg"
           >
             <Link
-              href="/"
+              href="/produto"
               className="
               px-8 
               py-1.5 
@@ -103,8 +105,9 @@ export default function Home() {
             >
               Conexões
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="
               hover:bg-white 
               hover:text-black
@@ -118,8 +121,9 @@ export default function Home() {
             >
               Mangueiras
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3 
               hover:bg-white/20
               duration-100
@@ -129,8 +133,9 @@ export default function Home() {
             >
               Radiadores
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3 
               hover:bg-white/20
               duration-100
@@ -140,8 +145,9 @@ export default function Home() {
             >
               Proteção Térmicas
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3 
               hover:bg-white/20
               duration-100
@@ -151,8 +157,9 @@ export default function Home() {
             >
               Escapamentos
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -161,8 +168,9 @@ export default function Home() {
             >
               Injeção
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -171,8 +179,9 @@ export default function Home() {
             >
               Filtros
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -181,8 +190,9 @@ export default function Home() {
             >
               Acessórios
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -191,8 +201,9 @@ export default function Home() {
             >
               Elétrica
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -664,8 +675,9 @@ export default function Home() {
         "
         >
           {/* Produto lista */}
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           justify-center
           items-center
           bg-white
@@ -678,77 +690,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/Produto 01.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Produto 01.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              Red Line 40WT Race Oil 946ml
-            </p>
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -756,40 +768,42 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
 
           {/* Produto 02 */}
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           justify-center
           items-center
           bg-white
@@ -802,77 +816,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/Camisetas.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Camisetas.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              Red Line 40WT Race Oil 946ml
-            </p>
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -880,40 +894,42 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
 
           {/* Produto 03 */}
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           justify-center
           items-center
           bg-white
@@ -926,77 +942,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/oleo azul.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/oleo azul.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              RED LINE LIQUID ASSEMBLY
-            </p>
+              >
+                RED LINE LIQUID ASSEMBLY
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -1004,40 +1020,42 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
 
           {/* Produto 04 */}
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           justify-center
           items-center
           bg-white
@@ -1050,77 +1068,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/Liquid red line.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Liquid red line.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              Camiseta Red Line Oil USA
-            </p>
+              >
+                Camiseta Red Line Oil USA
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -1128,40 +1146,42 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
 
           {/* Produto 05 */}
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           justify-center
           items-center
           bg-white
@@ -1174,77 +1194,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/Produto 01.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Produto 01.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              Red Line 40WT Race Oil 946ml
-            </p>
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -1252,37 +1272,37 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
-
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
         </div>
 
         {/* Garrett - Advancing Motion */}
@@ -1311,7 +1331,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Produtos linha 01 */}
+        {/* Produtos linha 02 */}
         <div
           className="
         flex items-center
@@ -1321,8 +1341,9 @@ export default function Home() {
         pb-20
         "
         >
-          <div
-            className="flex flex-col
+          <Link href="/produto">
+            <div
+              className="flex flex-col
           cursor-pointer
           justify-center
           items-center
@@ -1335,77 +1356,77 @@ export default function Home() {
           hover:shadow-xl
           transition
           "
-          >
-            {/* Icones de promoção */}
-            <div
-              className="
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
             flex
             justify-between
             gap-40
             "
-            >
-              <div>
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/Red Fire.svg"
-                  className="w-6 h-auto"
-                />
-              </div>
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
 
-              <div
-                className="
+                <div
+                  className="
               flex 
               justify-center
               gap-2 "
-              >
-                <Image
-                  alt="icone promoção"
-                  height={7}
-                  width={7}
-                  src="/icons/add carrinho cinza.png"
-                  className="w-6 h-6"
-                />
-                <Image
-                  alt="icone promoção"
-                  height={6}
-                  width={6}
-                  src="/icons/favoritos cinza.png"
-                  className="w-6 h-6"
-                />
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Imagem do produto */}
-            <Image
-              alt="Produto"
-              width={300}
-              height={300}
-              src="/produtos/Produto 01.png"
-              className="
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Produto 01.png"
+                className="
               h-auto w-60
               p-1
               hover:scale-105
               transition
               duration-300
               "
-            />
-            {/* Titulo do produto */}
-            <p
-            className="
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-bold
             "
-            >
-              Red Line 40WT Race Oil 946ml
-            </p>
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
 
-            {/* Preço antigo */}
-            <p
-              className="
+              {/* Preço antigo */}
+              <p
+                className="
             px-5
             w-full
             text-left
@@ -1413,38 +1434,38 @@ export default function Home() {
             font-light
             line-through
             "
-            >
-              R$ 449,90
-            </p>
+              >
+                R$ 449,90
+              </p>
 
-            {/* Preço atual */}
-            <p
-              className="
+              {/* Preço atual */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-xl
             font-bold
             "
-            >
-              R$ 359,91
-            </p>
+              >
+                R$ 359,91
+              </p>
 
-            {/* Linha de gatilho */}
-            <p
-              className="
+              {/* Linha de gatilho */}
+              <p
+                className="
             px-5
             w-full
             text-left
             text-md
             font-light
             "
-            >
-              No PIX ou 10x no Crêdito
-            </p>
-          </div>
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
         </div>
-
       </div>
     </div>
   );
