@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     /* main div */
-    <div>
+    <div className=" bg-white">
       {/* Barra de Navegação 01 🚢 */}
       <div className="bg-black text-white">
         <div
@@ -214,6 +214,159 @@ export default function Home() {
         h-2 
         my-2"
         ></div>
+      </div>
+
+      {/* Página de produto */}
+      <div className="flex justify-center">
+        <div
+          className="
+              max-w-360 
+              w-360 h-auto"
+        >
+          {/* Caminho do pproduto */}
+          <p
+            className="
+          pt-5
+          font-bold
+          "
+          >
+            {" "}
+            Início - Super Core GT3076R A/R 0.60 836028-5003S - Garrett{" "}
+          </p>
+
+          {/* Produto mais Comprar (com informações) */}
+          <div
+            className="
+          flex
+          pt-5
+          "
+          >
+            {/* Foto do produto */}
+            <div
+              className="
+            flex
+            justify-center
+            h-130
+            w-1/2
+            "
+            >
+              <Image
+                alt="Imagem-produto"
+                width="500"
+                height="500"
+                src="/produtos/Turbina 1.png"
+                className="
+                w-130 h-auto
+                "
+              />
+            </div>
+
+            {/* Descrição e Check-in */}
+            <div
+              className="
+            p-10
+            h-130
+            w-1/2"
+            >
+              {/* Colocar nos favoritos */}
+              <div className="flex justify-end">
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/favoritos cinza.png"
+                  className="w-5 h-auto"
+                />
+              </div>
+
+              {/* Rating e nota */}
+              <div className="flex justify-end gap-1 pt-3">
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/Start.svg"
+                  className="w-6 h-auto"
+                />
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/Start.svg"
+                  className="w-6 h-auto"
+                />
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/Start.svg"
+                  className="w-6 h-auto"
+                />
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/Start.svg"
+                  className="w-6 h-auto"
+                />
+                <Image
+                  alt="Imagem-produto"
+                  width="20"
+                  height="20"
+                  src="/icons/Start.svg"
+                  className="w-6 h-auto"
+                />
+                <p className="font-bold text-lg">(5)</p>
+              </div>
+
+              {/* Rating e nota */}
+              <div className="flex justify-start gap-1 pt-3">
+                <p className="font-bold text-xl">
+                  Super Core GT3076R A/R 0.60 836028-5003S - Garrett
+                </p>
+              </div>
+
+              {/* Titulo sobre o produto */}
+              <div className="flex justify-start gap-1 pt-5">
+                <Image
+                  alt="Esclamação-vermmelho"
+                  width="20"
+                  height="20"
+                  src="/icons/Marcador Vermelho.png"
+                  className="w-5 h-auto"
+                />
+                <p className="font-bold text-[#E82A25] text-sm">
+                  SOBRE O PRODUTO
+                </p>
+              </div>
+
+              {/* Descrição  */}
+              <div className="flex justify-start gap-1 pt-5">
+                <p className="text-md font-medium">
+                  Garrett® GTX é o nome que foi pioneiro na tecnologia turbo e
+                  impulsionou as equipes de corridas de arrancada e de estrada a
+                  quebrar centenas de recordes mundiais. As rodas fundidas do
+                  compressor apresentam aerodinâmica original da série GTX e
+                  fornecem durabilidade e longevidade máximas. As opções de
+                  caixa de turbina propiciam uma melhor escolha com grande
+                  variedade de configurações A/R e flange...
+                </p>
+              </div>
+
+              {/* Preço */}
+              <div className="flex justify-start flex-col gap-0.5 pt-5">
+                <p className="text-lg font-bold line-through">R$ 529,00</p>
+                <p className="text-[40px] font-bold text-[#E82A25]">
+                  R$ 439,00
+                </p>
+                <div className="flex">
+                  <p className="text-lg pr-2">Em até 10x de R$ 35,00 </p>
+                  <p className="text-lg font-bold">sem juros</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
