@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     /* main div */
-    <div className=" bg-white">
+    <div className="h-full bg-white">
       {/* Barra de Navegação 01 🚢 */}
       <div className="bg-black text-white">
         <div
@@ -235,12 +235,7 @@ export default function Home() {
           </p>
 
           {/* Produto mais Comprar (com informações) */}
-          <div
-            className="
-          flex
-          pt-5
-          "
-          >
+          <div className="flex pt-5">
             {/* Foto do produto */}
             <div
               className="
@@ -256,18 +251,14 @@ export default function Home() {
                 height="500"
                 src="/produtos/Turbina 1.png"
                 className="
+                p-10
                 w-130 h-auto
                 "
               />
             </div>
 
             {/* Descrição e Check-in */}
-            <div
-              className="
-            p-10
-            h-130
-            w-1/2"
-            >
+            <div className="p-10 h-130 w-1/2">
               {/* Colocar nos favoritos */}
               <div className="flex justify-end">
                 <Image
@@ -363,6 +354,57 @@ export default function Home() {
                   <p className="text-lg pr-2">Em até 10x de R$ 35,00 </p>
                   <p className="text-lg font-bold">sem juros</p>
                 </div>
+              </div>
+
+              {/* Botões de comprar/carrinho */}
+              <div className="flex justify-center pt-5">
+                <button
+                  className="
+                cursor-pointer
+                bg-[#E82A25] 
+                w-full h-12 
+                text-white
+                font-bold
+                rounded-sm
+                
+                hover:bg-red-500
+                transition
+                duration-75
+                "
+                >
+                  Comprar agora
+                </button>
+              </div>
+
+              <div
+                className="
+              cursor-pointer
+              flex 
+              gap-2
+              justify-center
+              items-center
+              rounded-sm border-2 mt-1
+              
+            hover:bg-gray-100
+              transition
+              duration-75
+              "
+              >
+                <Image
+                  alt="Esclamação-vermmelho"
+                  width="20"
+                  height="20"
+                  src="/icons/Add carrinho.svg"
+                  className="w-5 h-5"
+                />
+                <button
+                  className=" 
+                h-12
+                font-bold
+                "
+                >
+                  Adicionar ao carrinho
+                </button>
               </div>
             </div>
           </div>
