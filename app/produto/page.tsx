@@ -406,6 +406,60 @@ export default function Home() {
                   Adicionar ao carrinho
                 </button>
               </div>
+
+              {/* Consultar CEP */}
+              <div className="flex justify-start gap-2 pt-5">
+                <Image
+                  alt="Esclamação-vermmelho"
+                  width="20"
+                  height="20"
+                  src="/icons/Frete icone.png"
+                  className="w-7 h-auto"
+                />
+                <p className="font-bold text-[#E82A25] text-sm">
+                  CONSULTE FRETE
+                </p>
+              </div>
+
+              <div className="flex justify-start gap-1 pt-5">
+                <input
+                  type="text"
+                  placeholder="Inserir Cep*"
+                  className="
+              bg-white 
+              text-black 
+              w-full 
+              h-11 
+              p-1
+              px-4 
+              py-2
+              rounded-sm
+              border"
+                />
+                <div
+                  className="
+                flex 
+                justify-center
+                items-center
+                cursor-pointer
+                bg-[#E82A25] 
+                w-20 h-auto
+                font-bold
+                rounded-sm
+                
+                hover:bg-red-500
+                transition
+                duration-75"
+                >
+                  <Image
+                  alt="Esclamação-vermmelho"
+                  width="20"
+                  height="20"
+                  src="/icons/search branco.png"
+                  className="w-10 h-10 p-2"
+                />
+                </div>
+              </div>
             </div>
           </div>
         </div>
