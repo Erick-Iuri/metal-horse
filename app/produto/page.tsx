@@ -236,7 +236,7 @@ export default function Home() {
 
           {/* Produto mais Comprar (com informações) */}
           <div className="flex pt-5">
-            {/* Foto do produto */}
+            {/* Foto do produto 1/2 */}
             <div
               className="
             flex
@@ -257,7 +257,7 @@ export default function Home() {
               />
             </div>
 
-            {/* Descrição e Check-in */}
+            {/* Descrição e Check-in 2/2*/}
             <div className="p-10 h-130 w-1/2">
               {/* Colocar nos favoritos */}
               <div className="flex justify-end">
@@ -331,7 +331,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Descrição  */}
+              {/* Descrição do produto  */}
               <div className="flex justify-start gap-1 pt-5">
                 <p className="text-md font-medium">
                   Garrett® GTX é o nome que foi pioneiro na tecnologia turbo e
