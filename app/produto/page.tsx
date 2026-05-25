@@ -217,13 +217,13 @@ export default function Home() {
       </div>
 
       {/* Página de produto */}
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-white">
         <div
           className="
               max-w-360 
               w-360 h-auto"
         >
-          {/* Caminho do pproduto */}
+          {/* Caminho do produto */}
           <p
             className="
           pt-5
@@ -234,31 +234,102 @@ export default function Home() {
             Início - Super Core GT3076R A/R 0.60 836028-5003S - Garrett{" "}
           </p>
 
-          {/* Produto mais Comprar (com informações) */}
-          <div className="flex pt-5">
+          {/* Produto/Comprar (com informações) */}
+          <div className="flex pt-1">
             {/* Foto do produto 1/2 */}
-            <div
-              className="
-            flex
-            justify-center
-            h-130
-            w-1/2
-            "
-            >
-              <Image
-                alt="Imagem-produto"
-                width="500"
-                height="500"
-                src="/produtos/Turbina 1.png"
-                className="
+            <div className="flex justify-center flex-col h-auto w-1/2">
+              {/* Foto do roduto (principal) */}
+              <div className="flex justify-center">
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/Turbina 1.png"
+                  className="
                 p-10
-                w-130 h-auto
-                "
-              />
+                w-130 h-auto"
+                />
+              </div>
+
+              {/* Fotos do carrocel */}
+              <div className="flex justify-center items-center">
+                {/* 1/5 fotos */}
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/Turbina 1.png"
+                  className="w-30 h-auto p-3 
+                  border-2
+                  border-[#E82A25]
+                  hover:border-[#E82A25]
+                  cursor-pointer"
+                />
+
+                {/* 2/5 fotos */}
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/2.jpg"
+                  className="w-30 h-auto p-3 
+                  border-2
+                  border-transparent
+                  hover:scale-105
+                  transition
+                  duration-300
+                  cursor-pointer"
+                />
+
+                {/* 3/5 fotos */}
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/3.jpg"
+                  className="w-30 h-auto p-3 
+                  border-2
+                  border-transparent
+                  hover:scale-105
+                  transition
+                  duration-300
+                  cursor-pointer"
+                />
+
+                {/* 4/5 fotos */}
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/4.jpg"
+                  className="w-30 h-auto p-3
+                  border-2
+                  border-transparent
+                  hover:scale-105
+                  transition
+                  duration-300
+                  cursor-pointer"
+                />
+
+                {/* 4/5 fotos */}
+                <Image
+                  alt="Imagem-produto"
+                  width="500"
+                  height="500"
+                  src="/produtos/5.jpg"
+                  className="w-30 h-auto p-3
+                  border-2
+                  border-transparent
+                  hover:scale-105
+                  transition
+                  duration-300
+                  cursor-pointer"
+                />
+              </div>
             </div>
 
             {/* Descrição e Check-in 2/2*/}
-            <div className="p-10 h-130 w-1/2">
+            <div className="p-10 h-auto w-1/2">
               {/* Colocar nos favoritos */}
               <div className="flex justify-end">
                 <Image
@@ -407,7 +478,7 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* wdawdawdawda */}
+              {/* Consultar Frete*/}
               <div className="flex justify-start gap-2 pt-5">
                 <Image
                   alt="Esclamação-vermmelho"
@@ -452,15 +523,78 @@ export default function Home() {
                 duration-75"
                 >
                   <Image
-                  alt="Esclamação-vermmelho"
-                  width="20"
-                  height="20"
-                  src="/icons/search branco.png"
-                  className="w-10 h-10 p-2"
-                />
+                    alt="Esclamação-vermmelho"
+                    width="20"
+                    height="20"
+                    src="/icons/search branco.png"
+                    className="w-10 h-10 p-2"
+                  />
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Informações sobre 03 partes */}
+          <div className="flex justify-start gap-5 pt-5 text-lg">
+            {/* Botão Detalhes 1/3 */}
+            <div>
+              <button
+                className="
+              cursor-pointer
+              font-bold 
+              underline 
+              decoration-2 
+              underline-offset-10"
+              >
+                Detalhes
+              </button>
+            </div>
+
+            {/* Botão Informações 2/3 */}
+            <div>
+              <button
+                className="
+              cursor-pointer"
+              >
+                Informações
+              </button>
+            </div>
+
+            {/* Botão Avaliações 3/3 */}
+            <div>
+              <button
+                className="
+              cursor-pointer"
+              >
+                Avaliações
+              </button>
+            </div>
+          </div>
+
+          {/* Titulo 01 */}
+          <div className="pb-30">
+            <h2 className="pt-5 font-bold">
+              Super Core G25-550 A/R 0.70 - 858161-5002S - Garrett
+            </h2>
+
+            <p className="pt-5">
+              Redesenhados para extrair o máximo de desempenho possível, os
+              novos rotores da Linha G proporcionam maior fluxo de ar por faixa
+              de pressão, extraindo mais potência em relação as linhas
+              anteriores, otimizando sua faixa de eficiência. A linha G Series
+              conta com diversas opções de caixa quente, todas em aço inox,
+              disponíveis nas versões com/sem Wastegate integrada, que suportam
+              temperaturas de até 1050°C
+            </p>
+
+            <h2 className="pt-5 font-bold">Diferenciais G Series</h2>
+
+            <p className="pt-5">
+              Esse produto foi desenvolvido para uso profissional, sua má
+              instalação/utilização pode acarretar graves danos ao mesmo e
+              outras partes do veículo. Seu manuseio deve ser feito por
+              profissionais qualificados, se você não é, por favor procure um.
+            </p>
           </div>
         </div>
       </div>
