@@ -8,14 +8,13 @@ export default function Home() {
       {/* Barra de Navegação 01 🚢 */}
       <div className="bg-black text-white">
         <div
-          className="
-        flex 
-        justify-center 
-        space-x-4 
-        max-w-360 
-        mx-auto 
-        items-center 
-        p-3"
+          className="flex justify-between p-6 md:p-10
+        md:justify-center 
+        md:space-x-4 
+        md:max-w-360 
+        md:mx-auto 
+        md:items-center
+        "
         >
           {/* LOGO da marca 1/3*/}
           <Link href="/">
@@ -25,7 +24,7 @@ export default function Home() {
           </Link>
 
           {/* BARRA DE PESQUISA 2/3*/}
-          <div className="flex w-310">
+          <div className="hidden md:flex w-310">
             <input
               type="text"
               placeholder="Busque na Metal Horse"
@@ -43,16 +42,11 @@ export default function Home() {
           </div>
 
           {/* USER MENU 3/3 */}
-          <div
-            className="
-          flex 
-          space-x-3"
-          >
+          <div className="flex space-x-3">
             <div
-              className="flex
-            flex-row
-            justify-center
-            gap-3 
+              className="
+            hidden md:flex
+            flex-row justify-center gap-3 
             w-50 h-10"
             >
               <Image
@@ -83,7 +77,8 @@ export default function Home() {
         {/* Botões de ação */}
         <div
           className="
-        flex 
+        hidden
+        lg:flex 
         justify-center 
         items-center"
         >
@@ -226,13 +221,8 @@ export default function Home() {
       </div>
 
       {/* Banners 01*/}
-      <div className="flex justify-center">
-        <div
-          className="
-        max-w-360 
-        w-360 
-        h-100"
-        >
+      <div className="flex justify-center p-2">
+        <div className=" max-w-360 w-360 h-100">
           <Image
             alt="banner01"
             width={1280}
@@ -244,13 +234,7 @@ export default function Home() {
       </div>
 
       {/* Produtos em recomendação */}
-      <div
-        className="
-      mt-20
-      text-black
-      w-full
-      "
-      >
+      <div className="hidden mt-20 text-black w-full">
         {/* Destaques Metal Horse */}
         <div
           className="

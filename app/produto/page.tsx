@@ -217,7 +217,7 @@ export default function Home() {
       </div>
 
       {/* Página de produto */}
-      <div className="flex justify-center bg-white">
+      <div className="flex justify-center bg-white ">
         <div
           className="
               max-w-360 
