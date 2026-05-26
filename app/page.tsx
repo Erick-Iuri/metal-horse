@@ -239,7 +239,7 @@ export default function Home() {
         <div
           className="flex justify-start items-center gap-2
         max-w-360 
-        md:mx-auto
+        lg:mx-auto
         "
         >
           <Image
@@ -254,9 +254,9 @@ export default function Home() {
 
         {/* Recomendações Produtos */}
         <div
-          className="flex justify-center gap-4
+          className="flex justify-start gap-4
         max-w-360 
-        mx-auto"
+        md:mx-auto"
         >
           {/* Cards de recomendação */}
           <div
@@ -295,9 +295,7 @@ export default function Home() {
 
           {/* Downpipes */}
           <div
-            className="
-          flex
-          flex-col
+            className="flex flex-col
           items-center
           gap-2
           w-30 h-30
@@ -365,7 +363,7 @@ export default function Home() {
 
           {/* Inter Coolers */}
           <div
-            className="hidden flex-col items-center
+            className="hidden md:flex sm:flex flex-col items-center
           gap-2
           w-30 h-30
 
@@ -397,7 +395,7 @@ export default function Home() {
 
           {/* Bancos */}
           <div
-            className="hidden flex-col items-center
+            className="hidden md:flex flex-col sm:flex items-center
           gap-2
           w-30 h-30
 
@@ -588,11 +586,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Red Line Oil */}
+        {/* Red Line Oil texto */}
         <div
           className="mt-7 flex items-center justify-start gap-2
         max-w-360 
-        md:mx-auto"
+        lg:mx-auto"
         >
           <Image
             src="/icons/Red Fire.svg"
@@ -601,11 +599,7 @@ export default function Home() {
             height={6}
             className="w-6 h-6"
           />
-          <p
-            className="text-xl
-        font-bold
-        "
-          >
+          <p className="text-xl font-bold">
             Red Line Oil
           </p>
         </div>
@@ -1250,7 +1244,8 @@ export default function Home() {
         </div>
 
         {/* Garrett - Advancing Motion texto */}
-        <div className="flex items-center gap-2
+        <div
+          className="flex items-center gap-2
         max-w-360 
         md:mx-auto
         "
@@ -1909,7 +1904,6 @@ export default function Home() {
             </div>
           </Link>
         </div>
-
       </div>
     </div>
   );
