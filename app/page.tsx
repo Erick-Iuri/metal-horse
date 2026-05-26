@@ -222,7 +222,7 @@ export default function Home() {
 
       {/* Banners 01*/}
       <div className="flex justify-center p-2">
-        <div className=" max-w-360 w-360 h-100">
+        <div className=" max-w-360 w-360 h-auto">
           <Image
             alt="banner01"
             width={1280}
@@ -234,15 +234,12 @@ export default function Home() {
       </div>
 
       {/* Produtos em recomendação */}
-      <div className="hidden mt-20 text-black w-full">
-        {/* Destaques Metal Horse */}
+      <div className="flex flex-col w-full gap-7 p-2 text-black">
+        {/* Destaques Metal Horse texto */}
         <div
-          className="
-        flex
-        items-center
-        gap-2
+          className="flex justify-start items-center gap-2
         max-w-360 
-        mx-auto
+        md:mx-auto
         "
         >
           <Image
@@ -252,23 +249,12 @@ export default function Home() {
             height={6}
             className="w-6 h-6"
           />
-          <p
-            className="
-          text-xl
-          font-bold
-        "
-          >
-            Destaques Metal Horse
-          </p>
+          <p className="text-xl font-bold">Destaques Metal Horse</p>
         </div>
 
-        {/* Recomendações Produtos + Texto */}
+        {/* Recomendações Produtos */}
         <div
-          className="
-        my-6
-        flex
-        justify-center
-        gap-4
+          className="flex justify-center gap-4
         max-w-360 
         mx-auto"
         >
@@ -379,10 +365,7 @@ export default function Home() {
 
           {/* Inter Coolers */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -412,12 +395,9 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Bancos 000000*/}
+          {/* Bancos */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -449,10 +429,7 @@ export default function Home() {
 
           {/* Metanol */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -484,10 +461,7 @@ export default function Home() {
 
           {/* Red Line Oil */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -519,10 +493,7 @@ export default function Home() {
 
           {/* Roupas */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -554,10 +525,7 @@ export default function Home() {
 
           {/* Turbinas */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -589,10 +557,7 @@ export default function Home() {
 
           {/* Downpipes */}
           <div
-            className="
-          flex
-          flex-col
-          items-center
+            className="hidden flex-col items-center
           gap-2
           w-30 h-30
 
@@ -625,13 +590,9 @@ export default function Home() {
 
         {/* Red Line Oil */}
         <div
-          className="
-        mt-20
-        flex items-center
-        gap-2
+          className="mt-7 flex items-center justify-start gap-2
         max-w-360 
-        mx-auto
-        "
+        md:mx-auto"
         >
           <Image
             src="/icons/Red Fire.svg"
@@ -651,11 +612,10 @@ export default function Home() {
 
         {/* Produtos linha 01 */}
         <div
-          className="
-        flex items-center
+          className="flex justify-center
         gap-2 
         max-w-360 
-        mx-auto mt-10
+        md:mx-auto
         "
         >
           {/* Produto lista */}
@@ -787,7 +747,7 @@ export default function Home() {
           {/* Produto 02 */}
           <Link href="/produto">
             <div
-              className="flex flex-col
+              className="hidden flex-col
           justify-center
           items-center
           bg-white
@@ -913,7 +873,7 @@ export default function Home() {
           {/* Produto 03 */}
           <Link href="/produto">
             <div
-              className="flex flex-col
+              className="hidden flex-col
           justify-center
           items-center
           bg-white
@@ -1039,7 +999,7 @@ export default function Home() {
           {/* Produto 04 */}
           <Link href="/produto">
             <div
-              className="flex flex-col
+              className="hidden flex-col
           justify-center
           items-center
           bg-white
@@ -1165,7 +1125,7 @@ export default function Home() {
           {/* Produto 05 */}
           <Link href="/produto">
             <div
-              className="flex flex-col
+              className="hidden flex-col
           justify-center
           items-center
           bg-white
@@ -1289,14 +1249,10 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Garrett - Advancing Motion */}
-        <div
-          className="
-        mt-10
-        flex items-center
-        gap-2
+        {/* Garrett - Advancing Motion texto */}
+        <div className="flex items-center gap-2
         max-w-360 
-        mx-auto
+        md:mx-auto
         "
         >
           <Image
@@ -1317,18 +1273,16 @@ export default function Home() {
 
         {/* Produtos linha 02 */}
         <div
-          className="
-        flex items-center
+          className="flex justify-center
         gap-2 
         max-w-360 
-        mx-auto mt-10
-        pb-20
+        md:mx-auto
         "
         >
+          {/* Produto lista */}
           <Link href="/produto">
             <div
               className="flex flex-col
-          cursor-pointer
           justify-center
           items-center
           bg-white
@@ -1336,6 +1290,511 @@ export default function Home() {
           w-70 h-100
           rounded-lg
 
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
+            flex
+            justify-between
+            gap-40
+            "
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
+
+                <div
+                  className="
+              flex 
+              justify-center
+              gap-2 "
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
+              </div>
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Produto 01.png"
+                className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
+
+              {/* Preço antigo */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+              >
+                R$ 449,90
+              </p>
+
+              {/* Preço atual */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+              >
+                R$ 359,91
+              </p>
+
+              {/* Linha de gatilho */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
+
+          {/* Produto 02 */}
+          <Link href="/produto">
+            <div
+              className="hidden flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
+            flex
+            justify-between
+            gap-40
+            "
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
+
+                <div
+                  className="
+              flex 
+              justify-center
+              gap-2 "
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
+              </div>
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Camisetas.png"
+                className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+              >
+                Red Line 40WT Race Oil 946ml
+              </p>
+
+              {/* Preço antigo */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+              >
+                R$ 449,90
+              </p>
+
+              {/* Preço atual */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+              >
+                R$ 359,91
+              </p>
+
+              {/* Linha de gatilho */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
+
+          {/* Produto 03 */}
+          <Link href="/produto">
+            <div
+              className="hidden flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
+            flex
+            justify-between
+            gap-40
+            "
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
+
+                <div
+                  className="
+              flex 
+              justify-center
+              gap-2 "
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
+              </div>
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/oleo azul.png"
+                className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+              >
+                RED LINE LIQUID ASSEMBLY
+              </p>
+
+              {/* Preço antigo */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+              >
+                R$ 449,90
+              </p>
+
+              {/* Preço atual */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+              >
+                R$ 359,91
+              </p>
+
+              {/* Linha de gatilho */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
+
+          {/* Produto 04 */}
+          <Link href="/produto">
+            <div
+              className="hidden flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
+          hover:-translate-y-1
+          hover:shadow-xl
+          transition
+          "
+            >
+              {/* Icones de promoção */}
+              <div
+                className="
+            flex
+            justify-between
+            gap-40
+            "
+              >
+                <div>
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/Red Fire.svg"
+                    className="w-6 h-auto"
+                  />
+                </div>
+
+                <div
+                  className="
+              flex 
+              justify-center
+              gap-2 "
+                >
+                  <Image
+                    alt="icone promoção"
+                    height={7}
+                    width={7}
+                    src="/icons/add carrinho cinza.png"
+                    className="w-6 h-6"
+                  />
+                  <Image
+                    alt="icone promoção"
+                    height={6}
+                    width={6}
+                    src="/icons/favoritos cinza.png"
+                    className="w-6 h-6"
+                  />
+                </div>
+              </div>
+              {/* Imagem do produto */}
+              <Image
+                alt="Produto"
+                width={300}
+                height={300}
+                src="/produtos/Liquid red line.png"
+                className="
+              h-auto w-60
+              p-1
+              hover:scale-105
+              transition
+              duration-300
+              "
+              />
+              {/* Titulo do produto */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-bold
+            "
+              >
+                Camiseta Red Line Oil USA
+              </p>
+
+              {/* Preço antigo */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            line-through
+            "
+              >
+                R$ 449,90
+              </p>
+
+              {/* Preço atual */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-xl
+            font-bold
+            "
+              >
+                R$ 359,91
+              </p>
+
+              {/* Linha de gatilho */}
+              <p
+                className="
+            px-5
+            w-full
+            text-left
+            text-md
+            font-light
+            "
+              >
+                No PIX ou 10x no Crêdito
+              </p>
+            </div>
+          </Link>
+
+          {/* Produto 05 */}
+          <Link href="/produto">
+            <div
+              className="hidden flex-col
+          justify-center
+          items-center
+          bg-white
+          text-[#1E1E1E]
+          w-70 h-100
+          rounded-lg
+
+          cursor-pointer
           hover:-translate-y-1
           hover:shadow-xl
           transition
@@ -1450,6 +1909,7 @@ export default function Home() {
             </div>
           </Link>
         </div>
+
       </div>
     </div>
   );
