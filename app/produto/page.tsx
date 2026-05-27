@@ -8,14 +8,13 @@ export default function Home() {
       {/* Barra de Navegação 01 🚢 */}
       <div className="bg-black text-white">
         <div
-          className="
-        flex 
-        justify-center 
-        space-x-4 
-        max-w-360 
-        mx-auto 
-        items-center 
-        p-3"
+          className="flex justify-between p-6 md:p-10
+        md:justify-center 
+        md:space-x-4 
+        md:max-w-360 
+        md:mx-auto 
+        md:items-center
+        "
         >
           {/* LOGO da marca 1/3*/}
           <Link href="/">
@@ -25,7 +24,7 @@ export default function Home() {
           </Link>
 
           {/* BARRA DE PESQUISA 2/3*/}
-          <div className="flex w-310">
+          <div className="hidden md:flex w-310">
             <input
               type="text"
               placeholder="Busque na Metal Horse"
@@ -43,16 +42,11 @@ export default function Home() {
           </div>
 
           {/* USER MENU 3/3 */}
-          <div
-            className="
-          flex 
-          space-x-3"
-          >
+          <div className="flex space-x-3">
             <div
-              className="flex
-            flex-row
-            justify-center
-            gap-3 
+              className="
+            hidden md:flex
+            flex-row justify-center gap-3 
             w-50 h-10"
             >
               <Image
@@ -83,7 +77,8 @@ export default function Home() {
         {/* Botões de ação */}
         <div
           className="
-        flex 
+        hidden
+        lg:flex 
         justify-center 
         items-center"
         >
@@ -95,7 +90,7 @@ export default function Home() {
           text-lg"
           >
             <Link
-              href="/"
+              href="/produto"
               className="
               px-8 
               py-1.5 
@@ -105,8 +100,9 @@ export default function Home() {
             >
               Conexões
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="
               hover:bg-white 
               hover:text-black
@@ -120,19 +116,9 @@ export default function Home() {
             >
               Mangueiras
             </Link>
+
             <Link
-              href="/"
-              className="p-3 
-              hover:bg-white/20
-              duration-100
-              ease-in-out
-              transition
-              px-3 py-2 rounded-sm "
-            >
-              Radiadores
-            </Link>
-            <Link
-              href="/"
+              href="/produto"
               className="p-3 
               hover:bg-white/20
               duration-100
@@ -142,8 +128,9 @@ export default function Home() {
             >
               Proteção Térmicas
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3 
               hover:bg-white/20
               duration-100
@@ -153,8 +140,9 @@ export default function Home() {
             >
               Escapamentos
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -163,8 +151,9 @@ export default function Home() {
             >
               Injeção
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -173,8 +162,9 @@ export default function Home() {
             >
               Filtros
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -183,8 +173,9 @@ export default function Home() {
             >
               Acessórios
             </Link>
+
             <Link
-              href="/"
+              href="/produto"
               className="p-3  hover:bg-white/20
               duration-100
               ease-in-out
@@ -193,9 +184,13 @@ export default function Home() {
             >
               Elétrica
             </Link>
+
             <Link
-              href="/"
-              className="p-3  hover:bg-white/20
+              href="/produto"
+              className="
+              hidden
+              xl:flex
+              p-3  hover:bg-white/20
               duration-100
               ease-in-out
               transition
@@ -217,27 +212,17 @@ export default function Home() {
       </div>
 
       {/* Página de produto */}
-      <div className="flex justify-center bg-white ">
-        <div
-          className="
-              max-w-360 
-              w-360 h-auto"
-        >
+      <div className="flex justify-center bg-white">
+        <div className="max-w-360 w-360 h-auto">
           {/* Caminho do produto */}
-          <p
-            className="
-          pt-5
-          font-bold
-          "
-          >
-            {" "}
+          <p className="p-5 font-bold">
             Início - Super Core GT3076R A/R 0.60 836028-5003S - Garrett{" "}
           </p>
 
           {/* Produto/Comprar (com informações) */}
-          <div className="flex pt-1">
+          <div className="flex flex-col justify-center pt-1">
             {/* Foto do produto 1/2 */}
-            <div className="flex justify-center flex-col h-auto w-1/2">
+            <div className="flex justify-center flex-col h-auto">
               {/* Foto do roduto (principal) */}
               <div className="flex justify-center">
                 <Image
@@ -247,7 +232,7 @@ export default function Home() {
                   src="/produtos/Turbina 1.png"
                   className="
                 p-10
-                w-130 h-auto"
+                w-auto h-auto"
                 />
               </div>
 
@@ -302,7 +287,8 @@ export default function Home() {
                   width="500"
                   height="500"
                   src="/produtos/4.jpg"
-                  className="w-30 h-auto p-3
+                  className="hidden md:flex
+                  w-30 h-auto p-3
                   border-2
                   border-transparent
                   hover:scale-105
@@ -311,13 +297,14 @@ export default function Home() {
                   cursor-pointer"
                 />
 
-                {/* 4/5 fotos */}
+                {/* 5/5 fotos */}
                 <Image
                   alt="Imagem-produto"
                   width="500"
                   height="500"
                   src="/produtos/5.jpg"
-                  className="w-30 h-auto p-3
+                  className="hidden md:flex
+                  w-30 h-auto p-3
                   border-2
                   border-transparent
                   hover:scale-105
@@ -329,7 +316,7 @@ export default function Home() {
             </div>
 
             {/* Descrição e Check-in 2/2*/}
-            <div className="p-10 h-auto w-1/2">
+            <div className="p-10 h-auto">
               {/* Colocar nos favoritos */}
               <div className="flex justify-end">
                 <Image
@@ -534,8 +521,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Informações sobre 03 partes */}
-          <div className="flex justify-start gap-5 pt-5 text-lg">
+          {/* botões de detalhes, informações e avalizações */}
+          <div className="flex justify-start gap-5 p-5 text-lg">
             {/* Botão Detalhes 1/3 */}
             <div>
               <button
@@ -572,8 +559,8 @@ export default function Home() {
           </div>
 
           {/* Titulo 01 */}
-          <div className="pb-30">
-            <h2 className="pt-5 font-bold">
+          <div className="p-5">
+            <h2 className="font-bold">
               Super Core G25-550 A/R 0.70 - 858161-5002S - Garrett
             </h2>
 
