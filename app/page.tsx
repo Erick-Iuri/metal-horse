@@ -897,7 +897,7 @@ export default function Home() {
                 alt="Produto"
                 width={300}
                 height={300}
-                src="/produtos/oleo azul.png"
+                src="/produtos/Turbina 1.png"
                 className="
               h-auto w-50
               p-1
@@ -913,7 +913,7 @@ export default function Home() {
             text-md
             font-bold"
               >
-                RED LINE LIQUID ASSEMBLY LUBE
+                Super Core GTX3076R Gen II A/R 0.60 - 851154-5001S
               </p>
 
               {/* Preço antigo */}

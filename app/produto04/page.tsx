@@ -215,13 +215,12 @@ export default function Home() {
       <div className="flex justify-center bg-white">
         <div className="max-w-360 w-360 h-auto">
           {/* Caminho do produto */}
-          <p className="p-5 font-bold">Início - Red Line 40WT Race Oil 946ml</p>
+          <p className="p-5 font-bold">
+            Início - Camiseta Red Line Oil USA - Preta
+          </p>
 
           {/* Produto/Comprar (com informações) */}
-          <div
-            className="flex flex-col justify-center pt-1
-          lg:flex-row"
-          >
+          <div className="flex flex-col justify-center pt-1 lg:flex-row">
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
@@ -230,7 +229,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Camisetas.png"
                   className="
                 p-10
                 w-auto h-auto"
@@ -244,7 +243,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Camisetas.png"
                   className="w-30 h-auto p-3 
                   border-2
                   border-[#E82A25]
@@ -257,7 +256,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/2.jpg"
+                  src="/produtos/camiseta 02.jpg"
                   className="w-30 h-auto p-3 
                   border-2
                   border-transparent
@@ -272,7 +271,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/3.jpg"
+                  src="/produtos/camiseta 03.jpg"
                   className="w-30 h-auto p-3 
                   border-2
                   border-transparent
@@ -287,7 +286,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/4.jpg"
+                  src="/produtos/camiseta 04.jpg"
                   className="hidden md:flex
                   w-30 h-auto p-3
                   border-2
@@ -298,21 +297,6 @@ export default function Home() {
                   cursor-pointer"
                 />
 
-                {/* 5/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/5.jpg"
-                  className="hidden md:flex
-                  w-30 h-auto p-3
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
               </div>
             </div>
 
@@ -372,7 +356,7 @@ export default function Home() {
               {/* Nome do produto */}
               <div className="flex justify-start gap-1 pt-3">
                 <p className="font-bold text-xl">
-                  Red Line 40WT Race Oil 946ml
+                  Camiseta Red Line Oil USA - Preta
                 </p>
               </div>
 
@@ -393,11 +377,12 @@ export default function Home() {
               {/* Descrição do produto  */}
               <div className="flex justify-start gap-1 pt-5">
                 <p className="text-md font-medium">
-                  Fórmula 100% Sintética, Máxima Performance! #SemDiscussão
-                  Produto versátil para carros de Alta Performance Utilizado por
-                  muitas das principais equipes da Dirt Late Model Utilizado
-                  pelas principais equipes dos motores NASCAR Spec para o
-                  Camping World East e West Series
+                  Camiseta Preta Red Line Oil USA - Tamanhos Disponíveis
+                  Utilizando tecnologia de ponta, a Red Line responde aos
+                  desafios técnicos da indústria de alto desempenho. São
+                  entusiastas que se mantêm no topo de cada nicho de mercado,
+                  garantindo aprimoramento contínuo de seus produtos, resultam
+                  em gigantescos ganhos de desempenho para o setor.
                 </p>
               </div>
 
@@ -559,18 +544,17 @@ export default function Home() {
 
           {/* Titulo 01 */}
           <div className="p-10">
-            <h2 className="font-bold">
-              Super Core G25-550 A/R 0.70 - 858161-5002S - Garrett
-            </h2>
+            <h2 className="font-bold">Camiseta Red Line Oil USA - Preta</h2>
 
             <p className="pt-5">
-              Redesenhados para extrair o máximo de desempenho possível, os
-              novos rotores da Linha G proporcionam maior fluxo de ar por faixa
-              de pressão, extraindo mais potência em relação as linhas
-              anteriores, otimizando sua faixa de eficiência. A linha G Series
-              conta com diversas opções de caixa quente, todas em aço inox,
-              disponíveis nas versões com/sem Wastegate integrada, que suportam
-              temperaturas de até 1050°C
+              Camiseta Preta Red Line Oil USA - Tamanhos Disponíveis Utilizando
+              tecnologia de ponta, a Red Line responde aos desafios técnicos da
+              indústria de alto desempenho. São entusiastas que se mantêm no
+              topo de cada nicho de mercado, garantindo aprimoramento contínuo
+              de seus produtos, resultam em gigantescos ganhos de desempenho
+              para o setor. INFORMAÇÕES GERIAS: Código do Produto:
+              MH-CA-RLUSA-VARIACAO Fabricante: Metal Horse Material: 100%
+              Algodão
             </p>
 
             <h2 className="pt-5 font-bold">Diferenciais G Series</h2>

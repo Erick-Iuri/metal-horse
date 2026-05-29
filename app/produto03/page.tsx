@@ -215,13 +215,12 @@ export default function Home() {
       <div className="flex justify-center bg-white">
         <div className="max-w-360 w-360 h-auto">
           {/* Caminho do produto */}
-          <p className="p-5 font-bold">Início - Red Line 40WT Race Oil 946ml</p>
+          <p className="p-5 font-bold">
+            Início - Super Core GTX3076R Gen II A/R 0.60 - 851154-5001S{" "}
+          </p>
 
           {/* Produto/Comprar (com informações) */}
-          <div
-            className="flex flex-col justify-center pt-1
-          lg:flex-row"
-          >
+          <div className="flex flex-col justify-center pt-1 lg:flex-row">
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
@@ -230,7 +229,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Turbina 1.png"
                   className="
                 p-10
                 w-auto h-auto"
@@ -244,7 +243,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Turbina 1.png"
                   className="w-30 h-auto p-3 
                   border-2
                   border-[#E82A25]
@@ -372,7 +371,7 @@ export default function Home() {
               {/* Nome do produto */}
               <div className="flex justify-start gap-1 pt-3">
                 <p className="font-bold text-xl">
-                  Red Line 40WT Race Oil 946ml
+                  Super Core GTX3076R Gen II A/R 0.60 - 851154-5001S - Garrett
                 </p>
               </div>
 
@@ -393,11 +392,15 @@ export default function Home() {
               {/* Descrição do produto  */}
               <div className="flex justify-start gap-1 pt-5">
                 <p className="text-md font-medium">
-                  Fórmula 100% Sintética, Máxima Performance! #SemDiscussão
-                  Produto versátil para carros de Alta Performance Utilizado por
-                  muitas das principais equipes da Dirt Late Model Utilizado
-                  pelas principais equipes dos motores NASCAR Spec para o
-                  Camping World East e West Series
+                  Garrett® GTX é o nome que foi pioneiro na tecnologia turbo e
+                  impulsionou as equipes de corridas de arrancada e de estrada a
+                  quebrar centenas de recordes mundiais. As rodas fundidas do
+                  compressor apresentam aerodinâmica original da série GTX e
+                  fornecem durabilidade e longevidade máximas. As opções de
+                  caixa de turbina propiciam uma melhor escolha com grande
+                  variedade de configurações A/R e flange. Para qualquer
+                  necessidade de desempenho, os turbocompressores da série GTX
+                  são uma ótima opção de custo / benefício.
                 </p>
               </div>
 

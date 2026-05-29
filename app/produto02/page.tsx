@@ -215,13 +215,11 @@ export default function Home() {
       <div className="flex justify-center bg-white">
         <div className="max-w-360 w-360 h-auto">
           {/* Caminho do produto */}
-          <p className="p-5 font-bold">Início - Red Line 40WT Race Oil 946ml</p>
+          <p className="p-5 font-bold">Início - RED LINE LIQUID ASSEMBLY LUBE</p>
 
           {/* Produto/Comprar (com informações) */}
-          <div
-            className="flex flex-col justify-center pt-1
-          lg:flex-row"
-          >
+          <div className="flex flex-col justify-center pt-1
+          lg:flex-row">
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
@@ -230,7 +228,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Liquid red line.png"
                   className="
                 p-10
                 w-auto h-auto"
@@ -244,75 +242,12 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Produto 01.png"
+                  src="/produtos/Liquid red line.png"
                   className="w-30 h-auto p-3 
                   border-2
                   border-[#E82A25]
                   hover:border-[#E82A25]
-                  cursor-pointer"
-                />
-
-                {/* 2/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/2.jpg"
-                  className="w-30 h-auto p-3 
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 3/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/3.jpg"
-                  className="w-30 h-auto p-3 
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 4/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/4.jpg"
-                  className="hidden md:flex
-                  w-30 h-auto p-3
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 5/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/5.jpg"
-                  className="hidden md:flex
-                  w-30 h-auto p-3
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
+                  cursor-pointer"/>
               </div>
             </div>
 
@@ -372,7 +307,7 @@ export default function Home() {
               {/* Nome do produto */}
               <div className="flex justify-start gap-1 pt-3">
                 <p className="font-bold text-xl">
-                  Red Line 40WT Race Oil 946ml
+                  RED LINE LIQUID ASSEMBLY LUBE
                 </p>
               </div>
 
