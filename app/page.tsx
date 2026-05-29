@@ -604,11 +604,9 @@ export default function Home() {
 
         {/* Produtos linha 01 */}
         <div
-          className="flex justify-center 
-        gap-2 
+          className="flex justify-center gap-2 
         max-w-360 
-        md:mx-auto
-        "
+        md:mx-auto"
         >
           {/* Produto lista */}
 
@@ -954,7 +952,7 @@ export default function Home() {
           </Link>
 
           {/* Produto lista 04*/}
-          <Link href="/produto03">
+          <Link href="/produto04">
             <div
               className="hidden xl:flex
           flex-col justify-center
@@ -972,7 +970,8 @@ export default function Home() {
               {/* Icones de promoção */}
               <div
                 className="flex justify-between gap-35
-                w-55 min-h-7 ">
+                w-55 min-h-7 "
+              >
                 <div>
                   <Image
                     alt="icone promoção"
@@ -1067,7 +1066,7 @@ export default function Home() {
           </Link>
 
           {/* Produto lista 05*/}
-          <Link href="/produto03">
+          <Link href="/produto04">
             <div
               className="hidden xl:flex
           flex-col justify-center
@@ -1085,7 +1084,8 @@ export default function Home() {
               {/* Icones de promoção */}
               <div
                 className="flex justify-between gap-35
-                w-55 min-h-7 ">
+                w-55 min-h-7 "
+              >
                 <div>
                   <Image
                     alt="icone promoção"
@@ -1178,7 +1178,6 @@ export default function Home() {
               </p>
             </div>
           </Link>
-
         </div>
 
         {/* Garrett - Advancing Motion texto */}
@@ -1207,11 +1206,9 @@ export default function Home() {
 
         {/* Produtos linha 02 */}
         <div
-          className="flex justify-center 
-        gap-2 
+          className="flex justify-center gap-2 
         max-w-360 
-        md:mx-auto
-        "
+        md:mx-auto"
         >
           {/* Produto lista */}
 
@@ -1500,7 +1497,7 @@ export default function Home() {
                 alt="Produto"
                 width={300}
                 height={300}
-                src="/produtos/oleo azul.png"
+                src="/produtos/Turbina 1.png"
                 className="
               h-auto w-50
               p-1
@@ -1516,7 +1513,7 @@ export default function Home() {
             text-md
             font-bold"
               >
-                RED LINE LIQUID ASSEMBLY LUBE
+                Super Core GTX3076R Gen II A/R 0.60 - 851154-5001S
               </p>
 
               {/* Preço antigo */}
@@ -1557,7 +1554,7 @@ export default function Home() {
           </Link>
 
           {/* Produto lista 04*/}
-          <Link href="/produto03">
+          <Link href="/produto04">
             <div
               className="hidden xl:flex
           flex-col justify-center
@@ -1575,7 +1572,8 @@ export default function Home() {
               {/* Icones de promoção */}
               <div
                 className="flex justify-between gap-35
-                w-55 min-h-7 ">
+                w-55 min-h-7 "
+              >
                 <div>
                   <Image
                     alt="icone promoção"
@@ -1670,7 +1668,7 @@ export default function Home() {
           </Link>
 
           {/* Produto lista 05*/}
-          <Link href="/produto03">
+          <Link href="/produto04">
             <div
               className="hidden xl:flex
           flex-col justify-center
@@ -1688,7 +1686,8 @@ export default function Home() {
               {/* Icones de promoção */}
               <div
                 className="flex justify-between gap-35
-                w-55 min-h-7 ">
+                w-55 min-h-7 "
+              >
                 <div>
                   <Image
                     alt="icone promoção"
@@ -1781,7 +1780,6 @@ export default function Home() {
               </p>
             </div>
           </Link>
-
         </div>
       </div>
     </div>

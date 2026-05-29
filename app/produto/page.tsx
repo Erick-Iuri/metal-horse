@@ -219,9 +219,7 @@ export default function Home() {
 
           {/* Produto/Comprar (com informações) */}
           <div
-            className="flex flex-col justify-center pt-1
-          lg:flex-row"
-          >
+            className="flex flex-col justify-center pt-1 lg:flex-row">
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
@@ -249,68 +247,6 @@ export default function Home() {
                   border-2
                   border-[#E82A25]
                   hover:border-[#E82A25]
-                  cursor-pointer"
-                />
-
-                {/* 2/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/2.jpg"
-                  className="w-30 h-auto p-3 
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 3/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/3.jpg"
-                  className="w-30 h-auto p-3 
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 4/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/4.jpg"
-                  className="hidden md:flex
-                  w-30 h-auto p-3
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
-                  cursor-pointer"
-                />
-
-                {/* 5/5 fotos */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src="/produtos/5.jpg"
-                  className="hidden md:flex
-                  w-30 h-auto p-3
-                  border-2
-                  border-transparent
-                  hover:scale-105
-                  transition
-                  duration-300
                   cursor-pointer"
                 />
               </div>
