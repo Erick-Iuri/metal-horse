@@ -7,13 +7,26 @@ import { useState } from "react";
 export default function Home() {
   // troca imagens do produto
   const imagensProduto = [
-    "/produtos/Turbina 1.png",
-    "/produtos/2.jpg",
-    "/produtos/3.jpg",
-    "/produtos/5.jpg",
+    "/produtos/Turbina 1.png", //0
+    "/produtos/2.jpg", //1
+    "/produtos/3.jpg", //2
+    "/produtos/5.jpg", //3
   ];
   const [imagemAtual, setImagem] = useState(0);
-  imagensProduto[imagemAtual];
+
+  function carrosselProximo() {
+    const posicao = imagensProduto.length - 1;
+    if(imagemAtual < posicao) {
+      setImagem(imagemAtual + 1);
+    };
+  };
+
+  function carrosselVoltar() {
+    if(imagemAtual > 0) {
+      setImagem(imagemAtual - 1);
+    };
+  };
+
 
   return (
     /* main div */
@@ -251,12 +264,12 @@ export default function Home() {
 
                 {/* Botão vai */}
                 <button 
-                onClick={()=> console.log("foda-se")}
+                onClick={()=>{carrosselProximo()}}
                 className="bg-red-700 h-20 w-20 relative right-30 top-90">botão vai</button>
 
                 {/* Botão volta */}
                 <button
-                onClick={()=> console.log("foda-se")}
+                onClick={()=>{carrosselVoltar()}}
                 className="bg-amber-400 w-20 h-20 relative right-200 top-90">botão volta</button>
               </div>
 
