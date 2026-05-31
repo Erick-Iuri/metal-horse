@@ -13,7 +13,7 @@ export default function Home() {
     "/produtos/5.jpg",
   ];
   const [imagemAtual, setImagem] = useState(0);
-  const NextFoto = imagensProduto[imagemAtual];
+  imagensProduto[imagemAtual];
 
   return (
     /* main div */
@@ -243,7 +243,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src={NextFoto}
+                  src={imagensProduto[imagemAtual]}
                   className="
                 p-10
                 w-auto h-auto"
