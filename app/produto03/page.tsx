@@ -237,19 +237,7 @@ export default function Home() {
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
-              <div className="flex justify-center">
-                {/* Botão volta */}
-                <button
-                  onClick={() => {
-                    if (imagemAtual < imagensProduto.length - 1) {
-                      setImagem(imagemAtual + 1);
-                    }
-                  }}
-                  className="w-10 h-10 bg-amber-400"
-                >
-                  e
-                </button>
-
+              <div className="flex justify-center absolute">
                 {/* Imagem que está aparecendo do produto */}
                 <Image
                   alt="Imagem-produto"
@@ -262,16 +250,14 @@ export default function Home() {
                 />
 
                 {/* Botão vai */}
+                <button 
+                onClick={()=> console.log("foda-se")}
+                className="bg-red-700 h-20 w-20 relative right-30 top-90">botão vai</button>
+
+                {/* Botão volta */}
                 <button
-                  onClick={() => {
-                    if (imagemAtual < imagensProduto.length + 1) {
-                      setImagem(imagemAtual - 1);
-                    }
-                  }}
-                  className="w-10 h-10 bg-red-400"
-                >
-                  e
-                </button>
+                onClick={()=> console.log("foda-se")}
+                className="bg-amber-400 w-20 h-20 relative right-200 top-90">botão volta</button>
               </div>
 
               {/* Fotos do carrocel */}
