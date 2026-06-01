@@ -10,23 +10,23 @@ export default function Home() {
     "/produtos/Turbina 1.png", //0
     "/produtos/2.jpg", //1
     "/produtos/3.jpg", //2
-    "/produtos/5.jpg", //3
+    "/produtos/4.jpg", //3
+    "/produtos/5.jpg", //4
   ];
   const [imagemAtual, setImagem] = useState(0);
 
   function carrosselProximo() {
     const posicao = imagensProduto.length - 1;
-    if(imagemAtual < posicao) {
+    if (imagemAtual < posicao) {
       setImagem(imagemAtual + 1);
-    };
-  };
+    }
+  }
 
   function carrosselVoltar() {
-    if(imagemAtual > 0) {
+    if (imagemAtual > 0) {
       setImagem(imagemAtual - 1);
-    };
-  };
-
+    }
+  }
 
   return (
     /* main div */
@@ -250,27 +250,49 @@ export default function Home() {
             {/* Foto do produto 1/2 */}
             <div className="flex justify-center flex-col h-auto lg:w-2/1">
               {/* Foto do roduto (principal) */}
-              <div className="flex justify-center absolute">
-                {/* Imagem que está aparecendo do produto */}
-                <Image
-                  alt="Imagem-produto"
-                  width="500"
-                  height="500"
-                  src={imagensProduto[imagemAtual]}
-                  className="
+              <div className="flex justify-center">
+                <div className="relative">
+                  {/* Botão vai */}
+                  <button
+                    onClick={() => {
+                      carrosselProximo();
+                    }}
+                    className="cursor-pointer w-20 h-20 absolute bottom-65 right-1"
+                  >
+                    <Image
+                      src="/icons/Button direita.png"
+                      alt="Voltar"
+                      width={24}
+                      height={24}
+                    />
+                  </button>
+
+                  {/* Imagem que está aparecendo do produto */}
+                  <Image
+                    alt="Imagem-produto"
+                    width="500"
+                    height="500"
+                    src={imagensProduto[imagemAtual]}
+                    className="
                 p-10
                 w-auto h-auto"
-                />
+                  />
 
-                {/* Botão vai */}
-                <button 
-                onClick={()=>{carrosselProximo()}}
-                className="bg-red-700 h-20 w-20 relative right-30 top-90">botão vai</button>
-
-                {/* Botão volta */}
-                <button
-                onClick={()=>{carrosselVoltar()}}
-                className="bg-amber-400 w-20 h-20 relative right-200 top-90">botão volta</button>
+                  {/* Botão volta */}
+                  <button
+                    onClick={() => {
+                      carrosselVoltar();
+                    }}
+                    className="cursor-pointer h-20 w-20 absolute bottom-65"
+                  >
+                    <Image
+                      src="/icons/Button esquerda.png"
+                      alt="Voltar"
+                      width={24}
+                      height={24}
+                    />
+                  </button>
+                </div>
               </div>
 
               {/* Fotos do carrocel */}
@@ -280,7 +302,7 @@ export default function Home() {
                   alt="Imagem-produto"
                   width="500"
                   height="500"
-                  src="/produtos/Turbina 1.png"
+                  src={imagensProduto[imagemAtual]}
                   className="w-30 h-auto p-3 
                   border-2
                   border-[#E82A25]
@@ -290,6 +312,7 @@ export default function Home() {
 
                 {/* 2/5 fotos */}
                 <Image
+                  onClick={() => setImagem(1)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
@@ -305,6 +328,7 @@ export default function Home() {
 
                 {/* 3/5 fotos */}
                 <Image
+                  onClick={()=>setImagem(2)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
@@ -319,7 +343,8 @@ export default function Home() {
                 />
 
                 {/* 4/5 fotos */}
-                <Image
+                <Image  
+                  onClick={()=>setImagem(3)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
@@ -336,6 +361,7 @@ export default function Home() {
 
                 {/* 5/5 fotos */}
                 <Image
+                  onClick={()=>setImagem(4)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
