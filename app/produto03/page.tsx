@@ -28,6 +28,23 @@ export default function Home() {
     }
   }
 
+  // senha do usuário
+  const senha = "1234";
+  // senha digitada pelo usuário.
+  const tentativa = "1234";
+  // idade do usuário:
+  const idadeUser = 20;
+
+  if (idadeUser < 18) {
+    console.log("Acesso negado para pessoas menores de 18 anos.");
+  } else {
+    if (tentativa === senha) {
+      console.log("Acesso permitido.");
+    } else {
+      console.log("Senha incorreta!");
+    }
+  }
+
   return (
     /* main div */
     <div className="h-full bg-white">
@@ -328,7 +345,7 @@ export default function Home() {
 
                 {/* 3/5 fotos */}
                 <Image
-                  onClick={()=>setImagem(2)}
+                  onClick={() => setImagem(2)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
@@ -343,8 +360,8 @@ export default function Home() {
                 />
 
                 {/* 4/5 fotos */}
-                <Image  
-                  onClick={()=>setImagem(3)}
+                <Image
+                  onClick={() => setImagem(3)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
@@ -361,7 +378,7 @@ export default function Home() {
 
                 {/* 5/5 fotos */}
                 <Image
-                  onClick={()=>setImagem(4)}
+                  onClick={() => setImagem(4)}
                   alt="Imagem-produto"
                   width="500"
                   height="500"
