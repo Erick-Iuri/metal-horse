@@ -35,15 +35,18 @@ export default function Home() {
   // idade do usuário:
   const idadeUser = 20;
 
-  if (idadeUser < 18) {
-    console.log("Acesso negado para pessoas menores de 18 anos.");
-  } else {
-    if (tentativa === senha) {
-      console.log("Acesso permitido.");
-    } else {
-      console.log("Senha incorreta!");
-    }
-  }
+ let carteira = 30;
+
+const produto = 10;
+
+while (carteira >= produto) {
+  carteira = carteira - produto;
+  console.log(`Compra Aprovada! Sobrou ${carteira}$`);
+}
+  if (carteira < produto ) {
+    console.log(`Sem Dinheiro! ${carteira}$`);
+  };
+
 
   return (
     /* main div */
