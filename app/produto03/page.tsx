@@ -28,26 +28,6 @@ export default function Home() {
     }
   }
 
-  // senha do usuário
-  const senha = "1234";
-  // senha digitada pelo usuário.
-  const tentativa = "1234";
-  // idade do usuário:
-  const idadeUser = 20;
-
- let carteira = 30;
-
-const produto = 10;
-
-while (carteira >= produto) {
-  carteira = carteira - produto;
-  console.log(`Compra Aprovada! Sobrou ${carteira}$`);
-}
-  if (carteira < produto ) {
-    console.log(`Sem Dinheiro! ${carteira}$`);
-  };
-
-
   return (
     /* main div */
     <div className="h-full bg-white">
